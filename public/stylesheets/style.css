@@ -25,6 +25,7 @@ section {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  margin-bottom: 0;
 }
 
 a {
@@ -32,7 +33,7 @@ a {
   color: rgb(0, 85, 255);
 }
 
-.web-dev {
+section p {
   line-height: 1.6;
 }
 
