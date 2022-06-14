@@ -1,8 +1,55 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: Roboto, serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+header {
+  color: white;
+  background-color: rgb(0, 85, 255);
+  padding: 0.25rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
 }
 
 a {
-  color: #00B7FF;
+  text-decoration: none;
+  color: rgb(0, 85, 255);
+}
+
+.web-dev {
+  line-height: 1.6;
+}
+
+.web-dev.title {
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  border-bottom: medium solid rgb(0, 85, 255);
+  width: fit-content;
+}
+
+.not-found {
+  text-align: center;
+  justify-content: center;
+}
+
+.item {
+  margin: 0.5rem;
 }
