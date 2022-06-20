@@ -21,20 +21,37 @@ header {
   align-items: baseline;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  margin-bottom: 0;
-}
-
 a {
   text-decoration: none;
   color: rgb(0, 85, 255);
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
+section {
+  margin: 1rem;
+  flex: 1 1 47%;
+  border: lightgrey solid thin;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* background-color: rgb(245, 245, 245); */
+}
+
 section p {
   line-height: 1.6;
+}
+
+section h3 {
+  margin-bottom: 0.4rem;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
 }
 
 .web-dev.title {
