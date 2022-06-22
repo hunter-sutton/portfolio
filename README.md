@@ -1,7 +1,7 @@
 Hunter Sutton's Personal Website
 ================================
 
-(hunterwsutton.com)[https://hunterwsutton.com]
+https://hunterwsutton.com
 
 Description
 -----------
