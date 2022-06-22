@@ -7,6 +7,7 @@ var exphbs = require('express-handlebars');
 
 var app = express();
 
+// use handlebars as the view engine
 app.engine('handlebars', exphbs.engine({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
@@ -16,10 +17,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// render the homepage using handlebars
 app.get('/', (req, res) => {
   res.status(200).render('home');
 });
 
+
+// server the stylesheet used for all pages
 app.get('/style.css', (req, res) => {
   res.setHeader("Content-Type", "text/css");
   res.status(200).sendFile(path.join(__dirname, '/public/stylesheets/style.css'));
